@@ -1,0 +1,350 @@
+/* line 1, D:/projects/DI/public/css/dev/index.scss */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 5, D:/projects/DI/public/css/dev/index.scss */
+body {
+  background-color: #CABF9F !important;
+  background: url("skybox2.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  height: 100%;
+  overflow: auto;
+}
+
+/* line 18, D:/projects/DI/public/css/dev/index.scss */
+#canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+/* line 22, D:/projects/DI/public/css/dev/index.scss */
+#add-new {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2000;
+  color: green;
+  background-color: lightgreen;
+  transition-property: bottom;
+  transition-duration: .5s;
+}
+
+/* line 28, D:/projects/DI/public/css/dev/index.scss */
+#add-new.moved {
+  bottom: -80px;
+}
+
+/* line 32, D:/projects/DI/public/css/dev/index.scss */
+#add-new > .content {
+  width: 100% !important;
+}
+
+/* line 39, D:/projects/DI/public/css/dev/index.scss */
+#logout i {
+  margin-left: 7px;
+  margin-right: 0;
+}
+
+/* line 43, D:/projects/DI/public/css/dev/index.scss */
+#user-avatar {
+  display: none;
+}
+
+/* line 46, D:/projects/DI/public/css/dev/index.scss */
+#user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px 0;
+  min-width: 330px;
+}
+
+/* line 53, D:/projects/DI/public/css/dev/index.scss */
+#user-info img {
+  width: 85px;
+  height: 85px;
+  margin-right: 10px;
+}
+
+/* line 58, D:/projects/DI/public/css/dev/index.scss */
+#user-info h3 {
+  margin: 0;
+}
+
+/* line 62, D:/projects/DI/public/css/dev/index.scss */
+.ui.top.menu {
+  border-radius: 0;
+}
+
+/* line 63, D:/projects/DI/public/css/dev/index.scss */
+.logout:hover {
+  background-color: #B03060 !important;
+}
+
+/* line 64, D:/projects/DI/public/css/dev/index.scss */
+.login:hover {
+  background-color: #016936 !important;
+}
+
+/* line 65, D:/projects/DI/public/css/dev/index.scss */
+.ui.file.input input[type="file"] {
+  display: none;
+}
+
+/* line 68, D:/projects/DI/public/css/dev/index.scss */
+#body-head {
+  padding: 40px 0px 60px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 69, D:/projects/DI/public/css/dev/index.scss */
+#body-head #brand {
+  margin-bottom: 10px;
+}
+
+/* line 72, D:/projects/DI/public/css/dev/index.scss */
+#body-head #brand, #body-head #brand2 {
+  display: block;
+  height: 75px;
+}
+
+@media screen and (max-width: 1050px) {
+  /* line 72, D:/projects/DI/public/css/dev/index.scss */
+  #body-head #brand, #body-head #brand2 {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  /* line 72, D:/projects/DI/public/css/dev/index.scss */
+  #body-head #brand, #body-head #brand2 {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* line 72, D:/projects/DI/public/css/dev/index.scss */
+  #body-head #brand, #body-head #brand2 {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  /* line 72, D:/projects/DI/public/css/dev/index.scss */
+  #body-head #brand, #body-head #brand2 {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 72, D:/projects/DI/public/css/dev/index.scss */
+  #body-head #brand, #body-head #brand2 {
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* line 68, D:/projects/DI/public/css/dev/index.scss */
+  #body-head {
+    margin-bottom: 0;
+    padding: 30px 0;
+  }
+}
+
+/* line 104, D:/projects/DI/public/css/dev/index.scss */
+#body-bottom {
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 104, D:/projects/DI/public/css/dev/index.scss */
+  #body-bottom {
+    display: block;
+  }
+}
+
+/* line 112, D:/projects/DI/public/css/dev/index.scss */
+#body-bottom #filter-boxes {
+  width: 310px;
+}
+
+/* line 114, D:/projects/DI/public/css/dev/index.scss */
+#body-bottom #filter-boxes > div:first-child {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 112, D:/projects/DI/public/css/dev/index.scss */
+  #body-bottom #filter-boxes {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  /* line 118, D:/projects/DI/public/css/dev/index.scss */
+  #body-bottom #filter-boxes .disposable {
+    display: none !important;
+  }
+  /* line 123, D:/projects/DI/public/css/dev/index.scss */
+  #body-bottom #filter-boxes > div:first-child, #body-bottom #filter-boxes > div > div:nth-child(2) {
+    max-width: 100%;
+  }
+}
+
+/* line 127, D:/projects/DI/public/css/dev/index.scss */
+#body-bottom #filter-boxes .card {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 132, D:/projects/DI/public/css/dev/index.scss */
+#body-bottom #filter-preset {
+  border-radius: 0;
+}
+
+/* line 137, D:/projects/DI/public/css/dev/index.scss */
+#top-entry {
+  text-align: center;
+}
+
+/* line 139, D:/projects/DI/public/css/dev/index.scss */
+#top-entry img {
+  cursor: pointer;
+  width: 282px;
+  margin: 0 auto;
+}
+
+/* line 145, D:/projects/DI/public/css/dev/index.scss */
+.ui.selection.dropdown, .ui.label {
+  border-radius: 0 !important;
+}
+
+/* line 148, D:/projects/DI/public/css/dev/index.scss */
+.ui.modal > .content .tag {
+  margin-bottom: 10px;
+}
+
+/* line 154, D:/projects/DI/public/css/dev/index.scss */
+.ui.modal > .image.content {
+  justify-content: center;
+}
+
+/* line 158, D:/projects/DI/public/css/dev/index.scss */
+.ui.modal .scrolling.content {
+  max-height: 100%  !important;
+}
+
+/* line 161, D:/projects/DI/public/css/dev/index.scss */
+.ui.modal > .actions {
+  display: inline;
+  float: right;
+  border-top: none !important;
+  width: 100%;
+}
+
+/* line 177, D:/projects/DI/public/css/dev/index.scss */
+.gallery-card {
+  width: 300px !important;
+  border-radius: 0 !important;
+  position: relative;
+  background-size: cover;
+}
+
+/* line 180, D:/projects/DI/public/css/dev/index.scss */
+.gallery-card.upvoted i.heart.icon {
+  color: #21ba45 !important;
+}
+
+@media screen and (max-width: 1445px) {
+  /* line 177, D:/projects/DI/public/css/dev/index.scss */
+  .gallery-card {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 1301px) {
+  /* line 177, D:/projects/DI/public/css/dev/index.scss */
+  .gallery-card {
+    width: 380px !important;
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  /* line 177, D:/projects/DI/public/css/dev/index.scss */
+  .gallery-card {
+    width: 340px !important;
+  }
+}
+
+@media screen and (max-width: 1167px) {
+  /* line 177, D:/projects/DI/public/css/dev/index.scss */
+  .gallery-card {
+    width: 300px !important;
+  }
+}
+
+/* line 195, D:/projects/DI/public/css/dev/index.scss */
+.gallery-card .image img {
+  border-radius: 0 !important;
+}
+
+/* line 200, D:/projects/DI/public/css/dev/index.scss */
+.gallery-card .image {
+  height: 150px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/* line 210, D:/projects/DI/public/css/dev/index.scss */
+.entry-options-btn {
+  float: right;
+  margin-right: 0 !important;
+}
+
+/* line 214, D:/projects/DI/public/css/dev/index.scss */
+#gallery-body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 217, D:/projects/DI/public/css/dev/index.scss */
+#gallery-body .cards {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 221, D:/projects/DI/public/css/dev/index.scss */
+#gallery-body #gallery {
+  padding: 0 20px;
+  transition: .5s;
+}
+
+@media screen and (max-width: 1080px) {
+  /* line 221, D:/projects/DI/public/css/dev/index.scss */
+  #gallery-body #gallery {
+    padding: 0;
+  }
+}
+
+/* line 230, D:/projects/DI/public/css/dev/index.scss */
+#footer {
+  padding: 30px 0;
+}
+
+/*# sourceMappingURL=../index.map */
