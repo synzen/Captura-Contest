@@ -1,7 +1,7 @@
-const guildID = '224586661562941440'
+const discordServer = require('../config.json').discordServer
 
 module.exports = function(client, userID) {
-  const member = client.guilds.get(guildID).members.get(userID)
+  const member = client.guilds.get(discordServer).members.get(userID)
   if (!member) return {clan: 'Guest'}
   let role;
   let councillor = false

@@ -6,6 +6,7 @@ const genCard = require('../util/card.js')
 const entryOps = require('../util/entryOps.js')
 const discordInfo = require('../util/userInfo.js')
 const jsonParser = bodyParser.json({limit: '5mb'})
+const discordServer = require('../config.json').discordServer
 
 function shuffle(array) {
   if (array.length === 1) return array
@@ -52,7 +53,7 @@ router.post('/newentry', jsonParser, function(req, res) {
 
     entryOps.add(info, function(err, entryID) {
       const client = res.app.get('client')
-      const member = client.guilds.get('224586661562941440').members.get(info.discord.id)
+      const member = client.guilds.get(discordServer).members.get(info.discord.id)
       const recentHTML = `
         <div class="event">
           <div class="content">
@@ -107,7 +108,7 @@ router.post('/getentries', function(req, res) {
       const client = res.app.get('client')
       for (var x in entries) {
         const entry = entries[x]
-        const member = client.guilds.get('224586661562941440').members.get(entry.discord_id)
+        const member = client.guilds.get(discordServer).members.get(entry.discord_id)
         if (member) {
           acquiredUsernames[entry.discord_id] = member.nickname ? member.nickname : member.user.username
           entry.discord_name = acquiredUsernames[entry.discord_id]

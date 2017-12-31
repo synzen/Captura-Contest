@@ -1,3 +1,4 @@
 {
-  "host": "http://localhost:3000/"
+  "host": "http://localhost:3000/",
+  "discordServer": "224586661562941440"
 }
