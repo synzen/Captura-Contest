@@ -1,4 +1,7 @@
 {
   "host": "http://localhost:3000/",
-  "discordServer": "224586661562941440"
+  "discordServer": "",
+  "token": "",
+  "id": "",
+  "secret": ""
 }

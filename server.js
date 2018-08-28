@@ -15,6 +15,7 @@ const client = new Discord.Client({ fetchAllMembers: true })
 const discordInfo = require('./util/userInfo.js')
 const config = JSON.parse(fs.readFileSync('./config.json'))
 const host = config.host.endsWith('/') ? config.host : config.host + '/'
+const PORT = 3000
 
 initialize(function(err) {
   if (err) return console.log(err)
@@ -23,12 +24,12 @@ initialize(function(err) {
     console.log(`Logged in as ${client.user.tag}`)
   })
 
-  client.login('MjU5MTEwNjQ3OTUyODM0NTYy.DNSzUw.njQVuxihs37vg5fbwZWnCjwK4MY')
+  client.login(config.token)
 
   const oauth2 = Oauth2.create({
     client: {
-      id: '259110647952834562',
-      secret: 'J0v_IQcSglKudtEBmhboBbU3GtCQF7XB',
+      id: config.id,
+      secret: config.secret,
     },
     auth: {
       tokenHost: 'https://discordapp.com',
@@ -114,7 +115,7 @@ initialize(function(err) {
     });
   })
 
-  app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+  app.listen(PORT, function () {
+    console.log(`App listening on port ${PORT}! Connect via localhost:${PORT}`)
   })
 })
