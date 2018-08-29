@@ -15,6 +15,8 @@ Made specifically for a game community. To run this repo:
   * Run `node server` in terminal/command prompt in the main directory
   * Enter localhost:3000 in any web browser
 
+## Preview
+
 ![Screenshot of Page](https://i.imgur.com/akv2ytr.jpg)
 
-Note that the background image in public/imgs/skybox2.jpg is from https://n9e5v4d8.ssl.hwcdn.net/uploads/a89fdeed40f8ce6e40dd642f57a95f84.jpg
+**Disclaimer:** The background image in public/imgs/skybox2.jpg is not my creation, and is from https://www.warframe.com/news/building-warframe-ice-planet
